@@ -1,0 +1,73 @@
+:root {
+  --BrightOrange: hsl(31, 77%, 52%);
+  --DarkCyan: hsl(184, 100%, 22%);
+  --VeryDarkCyan: hsl(179, 100%, 13%);
+  --TransparentWhite: hsla(0, 0%, 100%, 0.75);
+  --VeryLightGray: hsl(0, 0%, 95%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 10px;
+}
+
+.card__title {
+  text-transform: uppercase;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 800;
+  font-size: 25px;
+  color: var(--VeryLightGray);
+}
+
+.card__body {
+  font-weight: 100;
+  color: var(--TransparentWhite);
+}
+
+.card__button {
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 10px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.card__button:hover {
+  background-color: transparent;
+  color: white;
+  border: 2px solid var(--VeryLightGray);
+}
+
+.card--sedans {
+  background-color: var(--BrightOrange);
+  grid-area: sedans;
+}
+
+.card--suvs {
+  background-color: var(--DarkCyan);
+  grid-area: suvs;
+}
+
+.card--luxury {
+  background-color: var(--VeryDarkCyan);
+  grid-area: luxury;
+}
+
+.card__button--sedans {
+  color: var(--BrightOrange);
+}
+.card__button--suvs {
+  color: var(--DarkCyan);
+}
+.card__button--luxury {
+  color: var(--VeryDarkCyan);
+}
